@@ -2,7 +2,8 @@ const SkillModel = require('../models/skill')
 
 module.exports = {
 	index: index,
-	show
+	show,
+	new: newSkill,
 	
 	// optionally
 	// index
