@@ -4,11 +4,16 @@ module.exports = {
 	index: index,
 	show,
 	new: newSkill,
+	create
 	
 	// optionally
 	// index
 }
-
+function create(req, res){
+	console.log(req.body, " < _ contents of our form");
+	SkillModel.create(req.body)
+	res.redirect('/skills');
+}
 
 
 function newSkill(req, res){
