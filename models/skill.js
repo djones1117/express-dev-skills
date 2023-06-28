@@ -29,7 +29,7 @@ module.exports = {
 
   function create(skill) {
 	// Add the id
-	skill.id = Date.now() % 1000000;
+	skills.id = Date.now() % 1000000;
 	// New todos wouldn't be done :)
 	skill.done = false;
 	skills.push(skill);
