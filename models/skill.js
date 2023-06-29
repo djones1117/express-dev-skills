@@ -32,7 +32,8 @@ module.exports = {
 	skills.id = Date.now() % 1000000;
 	// New todos wouldn't be done :)
 	skill.done = false;
-	skills.push(skill);
+	skill.push(skill);
+  return skill
   }
 
   function getAll() {

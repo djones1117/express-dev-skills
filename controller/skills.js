@@ -4,13 +4,24 @@ module.exports = {
 	index: index,
 	show,
 	new: newSkill,
-	create
+	create,
+	delete: deleteOne
 	
 	// optionally
 	// index
 }
+
+function deleteOne(req, res){
+	SkillModel.deleteOne(req.params.id)
+	res.redirect('/skills')
+}
+
+
+
+
 function create(req, res){
 	console.log(req.body, " < _ contents of our form");
+	
 	SkillModel.create(req.body)
 	res.redirect('/skills');
 }
